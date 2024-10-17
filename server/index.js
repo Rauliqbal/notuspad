@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import bodyParser from "body-parser";
 import { Database } from "./config/database.js";
 import router from './src/router/index.js'
 import "dotenv/config";
@@ -18,7 +17,7 @@ Database(process.env.DATABASE_URL);
 
 app.get("/", (req, res) => {
    res.json({
-      message: "Welcome! to my server👋",
+      message: "Welcome! to notuspad server👋",
    });
 });
 
