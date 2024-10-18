@@ -4,9 +4,9 @@ import { useSidebar } from "../../composable/useSidebar";
 import { HiViewGrid } from "oh-vue-icons/icons/hi";
 
 const { isOpen } = useSidebar();
-const activeClass = ref("bg-indigo-400 ");
+const activeClass = ref("bg-indigo-500 shadow-lg ");
 const inactiveClass = ref(
-  "text-gray-500 hover:bg-indigo-400  hover:text-gray-100 border-gray-100"
+  "text-gray-500 hover:bg-indigo-500  hover:text-gray-100 border-gray-100"
 );
 </script>
 

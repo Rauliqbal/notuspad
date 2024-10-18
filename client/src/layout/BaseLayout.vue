@@ -1,4 +1,5 @@
 <script setup>
+import Header from "../components/dashboard/Header.vue";
 import Sidebar from "../components/dashboard/Sidebar.vue";
 </script>
 <template>
@@ -7,9 +8,9 @@ import Sidebar from "../components/dashboard/Sidebar.vue";
       <Sidebar />
     </div>
 
-    <div class="flex flex-1 flex-col">
-      <header class="bg-white py-10">Header</header>
-      <main class="bg-indigo-100 h-full rounded-2xl flex mr-10">
+    <div class="flex flex-1 flex-col mr-4">
+      <Header />
+      <main class="bg-indigo-100 h-full rounded-2xl flex p-4">
         <slot />
       </main>
       <footer
