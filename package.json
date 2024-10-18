@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start:fe": "",
+    "start:fe": "cd ./client && npm run dev",
     "start:be": "cd ./server && npm run dev",
     "dev": "concurrently \"npm run start:fe\"  \"npm run start:be\""
   },
@@ -15,7 +15,10 @@
     "task"
   ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
