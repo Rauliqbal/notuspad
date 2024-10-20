@@ -10,7 +10,7 @@ import Sidebar from "../components/dashboard/Sidebar.vue";
 
     <div class="flex flex-1 flex-col mr-4">
       <Header />
-      <main class="bg-indigo-100 h-full rounded-2xl flex p-4">
+      <main class="bg-indigo-100 h-full w-full rounded-2xl p-4">
         <slot />
       </main>
       <footer
